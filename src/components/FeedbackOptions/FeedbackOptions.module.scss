@@ -1,0 +1,31 @@
+.buttonThumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: orange;
+    border: 3px solid orange;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        transform: scaleY(1.1);
+        background-color: orange;
+        color: rgb(52, 51, 51);
+    }
+
+    &:focus {
+        font-weight: 700;
+        transform: scaleY(1.1);
+        background-color: orange;
+        color: yellow;
+    }
+}
